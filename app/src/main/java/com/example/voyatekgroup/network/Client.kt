@@ -22,7 +22,7 @@ fun createClient(
         defaultRequest {
             url {
                 protocol = URLProtocol.HTTPS
-                host = "cac15a83b774a265878e.free.beeceptor.com"
+                host = "ca3357428fc3ca1882b5.free.beeceptor.com"
                 path("/api")
             }
             contentType(ContentType.Application.Json)

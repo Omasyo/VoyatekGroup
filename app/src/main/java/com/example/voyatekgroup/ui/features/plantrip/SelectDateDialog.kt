@@ -1,5 +1,7 @@
 package com.example.voyatekgroup.ui.features.plantrip
 
+import androidx.compose.foundation.layout.imePadding
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -80,7 +82,8 @@ fun SelectDateDialog(
                 selectedDate = selectedDate,
                 onStartDateTap = { onTapSelectedDate(SelectedDate.Start) },
                 onEndDateTap = { onTapSelectedDate(SelectedDate.End) },
-                onChooseDateTap = onCloseTap
+                onChooseDateTap = onCloseTap,
+                modifier = Modifier.navigationBarsPadding()
             )
         }
     ) { contentPadding ->
