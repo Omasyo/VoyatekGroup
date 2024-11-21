@@ -49,7 +49,7 @@ fun ItineraryCard(
             LocalContentColor provides contentColor
         ) {
             Row {
-                Icon(painterResource(R.drawable.airplane_in_flight), null)
+                Icon(painterResource(iconId), null)
                 Spacer(Modifier.width(10f.dp))
                 Text(
                     text = title,

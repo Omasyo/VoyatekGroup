@@ -1,6 +1,5 @@
 package com.example.voyatekgroup.ui.features.plantrip
 
-import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api

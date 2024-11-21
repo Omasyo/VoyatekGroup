@@ -4,7 +4,6 @@ import android.util.Log
 import com.example.voyatekgroup.models.Trip
 import com.example.voyatekgroup.network.models.CreateTripRequest
 import com.example.voyatekgroup.network.models.ErrorResponse
-import com.example.voyatekgroup.ui.components.UiState
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.request.get
@@ -20,7 +19,7 @@ internal class TripNetworkSourceImpl @Inject constructor(
     private val client: HttpClient
 ) : TripNetworkSource {
 
-    val tag: String = this::class.simpleName!!
+    private val tag: String = this::class.simpleName!!
 
     override suspend fun createTrip(trip: CreateTripRequest): Result<Trip> = makeRequest {
         client.post("/trips") {

@@ -1,7 +1,6 @@
 package com.example.voyatekgroup
 
 import androidx.compose.animation.AnimatedContentTransitionScope
-import androidx.compose.animation.core.FiniteAnimationSpec
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.spring
 import androidx.compose.animation.fadeIn
@@ -11,25 +10,16 @@ import androidx.compose.animation.scaleOut
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.input.key.Key.Companion.Home
-import androidx.compose.ui.unit.IntOffset
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.voyatekgroup.models.Trip
 import com.example.voyatekgroup.ui.features.plantrip.PlanTripRoute
-import com.example.voyatekgroup.ui.features.plantrip.PlanTripViewModel
 import com.example.voyatekgroup.ui.features.plantrip.SelectCityRoute
 import com.example.voyatekgroup.ui.features.plantrip.SelectDateRoute
 import com.example.voyatekgroup.ui.features.tripdetails.TripDetailsRoute
 import kotlinx.serialization.Serializable
-
-
-private val spec: FiniteAnimationSpec<IntOffset> =
-    spring(dampingRatio = Spring.DampingRatioLowBouncy, stiffness = Spring.StiffnessLow)
 
 @Composable
 fun AppNavHost(

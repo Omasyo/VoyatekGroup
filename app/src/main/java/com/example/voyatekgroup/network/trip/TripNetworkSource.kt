@@ -2,7 +2,6 @@ package com.example.voyatekgroup.network.trip
 
 import com.example.voyatekgroup.models.Trip
 import com.example.voyatekgroup.network.models.CreateTripRequest
-import com.example.voyatekgroup.ui.components.UiState
 
 interface TripNetworkSource {
     suspend fun createTrip(
